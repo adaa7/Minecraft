@@ -1,0 +1,39 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 40px;
+    margin-right: 100px;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    box-shadow: inset 0 0 0 2px rgba(161, 161, 161, 0.25);
+    border-radius: 4px;
+    z-index: 9999;
+}
+nav a {
+    padding: 0 10px 0 10px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ebebeb;
+    font-weight:bold;
+    font-size: 14px;
+    transition: .2s;
+    
+}
+ nav a:hover {
+    padding: 0 50px 0 50px;
+    font-size: 15px;
+    color: white;
+}
+#img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url('../images/2.png');
+    background-size: cover;
+}
+.logo {
+    width: 173px;
+    height: 36px;
+}

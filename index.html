@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MINECRAFT</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./css/Base.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <nav class="fr">
+      <a href="/index.html">首页</a>
+      <a href="/introduction.html">游戏介绍</a>
+      <a href="/person.html">人物介绍</a>
+      <a href="/download.html">下载</a>
+      <a href="/logo.html">登入</a>
+    </nav>
+    <div class="logo">
+      <img src="./images/index/logo-minecraft.svg" alt="" />
+    </div>
+    <div class="content">
+      <div class="title">MINECRAFT</div>
+      <div id="text1"></div>
+    </div>
+    <a href="/Self.html" class="self">网站介绍</a>
+    <div id="img"></div>
+  </body>
+  <script src="./js/zombie.js"></script>
+  <script src="./js/typed.js"></script>
+  <script>
+    var typed = new Typed("#text1", {
+      strings: ["你所走过的每一步,都是为了你未来的一步。"],
+      typeSpeed: 90,
+    });
+  </script>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logo</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./css/Base.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/logo.css" />
+  </head>
+  <body>
+    <nav class="fr clearfix">
+      <a href="/index.html">首页</a>
+      <a href="/introduction.html">游戏介绍</a>
+      <a href="/person.html">人物介绍</a>
+      <a href="/download.html">下载</a>
+      <a href="/logo.html">登入</a>
+    </nav>
+    <div class="box">
+      <h2>Login</h2>
+      <div class="input-box">
+        <form action="">
+          <div class="input-box">
+            <label>账号</label>
+            <input type="text" />
+          </div>
+          <div class="input-box">
+            <label>密码</label>
+            <input type="password" />
+          </div>
+          <div class="btn-box">
+            <a href="#">忘记密码?</a>
+            <div>
+              <button>登录</button>
+              <button>注册</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    setInterval(function () {
+      var rain = document.createElement("div");
+      rain.style.position = "fixed";
+      rain.style.height = "150px";
+      rain.style.width = "2px";
+      rain.style.background = "#FFF";
+      rain.style.filter = "blur(1px)";
+      rain.style.top = "0px";
+      rain.style.left = Math.random() * 1920 + "px";
+      rain.style.opacity = parseInt(Math.random() * 10) / 10 + "";
+
+      document.body.appendChild(rain);
+
+      var timer = setInterval(function () {
+        var height = parseInt(rain.style.top);
+        var k = 1;
+        k++;
+
+        rain.style.top = height + Math.pow(k, 0.5) + "%";
+
+        if (parseInt(rain.style.top) >= 100) {
+          clearInterval(timer);
+          rain.parentNode.removeChild(rain);
+        }
+      }, 2);
+    }, 8);
+  </script>
+</html>
